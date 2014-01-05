@@ -3,8 +3,6 @@ before_install:
   - echo "Travis CI starts"
   - sudo apt-get update
   - sudo apt-get install build-essential libgtk2.0-dev make
-install: make get-deps
-script:
-  - make
-after_script:
+install: make
+after_install:
   - echo "Travis CI ends"
